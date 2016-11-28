@@ -26,6 +26,9 @@ public class PlotParser {
         int outputLine = plot.addLinePlot("Output", x, output);
         plot.getPlot(outputLine).setColor(Color.RED);
 
+        int errorBar = plot.addBarPlot("PercentError", x, error);
+        plot.getPlot(errorBar).setColor(Color.GREEN);
+
         JFrame frame = new JFrame("a plot panel");
         frame.setContentPane(plot);
         frame.setSize(1000, 1000);
