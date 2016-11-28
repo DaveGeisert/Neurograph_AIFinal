@@ -81,7 +81,7 @@ public class Main {
             System.out.println();
             output[counter] = out;
             desiredOutput[counter] = exp;
-            percentError[counter] = error;
+            percentError[counter] = error * 100;
             counter++;
         }
         System.out.println("Mean Error: " + totalError/testingData.size());
